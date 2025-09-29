@@ -1,0 +1,18 @@
+name: Validate MCP Registry
+
+on:
+  pull_request:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON
+        uses: GrantBirki/json-yaml-validate@v2.2.0
+        with:
+          json_schema: ".schemas/manifest.schema.json"
+          json_files: "servers/**/manifest.json clients/**/manifest.json registry.json"

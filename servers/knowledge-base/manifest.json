@@ -1,0 +1,12 @@
+{
+  "name": "internal-knowledge-base",
+  "version": "1.0.0",
+  "protocol": "mcp/0.1",
+  "transport": "http",
+  "endpoint": "https://mcp.mycompany.com/knowledge-base",
+  "auth": {
+    "type": "bearer",
+    "env": "MCP_KB_TOKEN"
+  },
+  "description": "Provides secure enterprise knowledge lookup"
+}
