@@ -2,7 +2,7 @@
   "servers": {
     "knowledge-base": {
       "name": "Internal Knowledge Base",
-      "url": "https://github.com/myorg/knowledge-base-mcp",
+      "url": "https://github.com/nahmedmalik/knowledge-base-mcp",
       "description": "Enterprise-only MCP service for knowledge queries",
       "manifest": "servers/knowledge-base/manifest.json"
     }
@@ -10,7 +10,7 @@
   "clients": {
     "internal-assistant": {
       "name": "Internal AI Assistant",
-      "url": "https://github.com/myorg/internal-assistant",
+      "url": "https://github.com/nahmedmalik/internal-assistant",
       "description": "AI assistant client integrated with enterprise MCP registry",
       "manifest": "clients/internal-assistant/manifest.json"
     }
